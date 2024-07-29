@@ -1,0 +1,22 @@
+package one.digitalinnovation.gof.singleton;
+
+/**
+ * 
+ * Singleton "Lazy Holder".
+ * 
+ */
+public class SingletonLazyHolder {
+	
+	private static class InstanceHolder{
+	public static SingletonLazyHolder instancia = new SingletonLazyHolder();
+	}
+	
+	private SingletonLazyHolder() {
+		super();
+	}
+	
+	public static SingletonLazyHolder getInsntancia() {
+		return InstanceHolder.instancia;
+	}
+
+}
